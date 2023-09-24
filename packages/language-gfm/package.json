@@ -1,0 +1,13 @@
+{
+  "name": "language-gfm",
+  "version": "0.90.8",
+  "description": "Syntax highlighting and snippets for GitHub Flavored Markdown (GFM).",
+  "repository": "https://github.com/pulsar-edit/pulsar",
+  "license": "MIT",
+  "engines": {
+    "atom": "*"
+  },
+  "devDependencies": {
+    "coffeescript": "^1.7.0"
+  }
+}
