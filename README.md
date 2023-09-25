@@ -113,7 +113,7 @@
 * windows系统：
   * 参考文档：https://keqingrong.cn/blog/2021-02-21-build-tools-on-windows/
   * 下载地址：https://visualstudio.microsoft.com/visual-cpp-build-tools/
-* 按照默认安装，什么插件都不选
+  * 按照默认安装，什么插件都不选
 ![Alt text](image.png)
 
 * mac系统：
@@ -126,7 +126,7 @@
 8. 下载依赖库，编译Native Node模块（需要切换到项目根目录）
 * yarn install
 * yarn build
-这一步是最容易出错的，如果在第6步中正确安装了c++编译工具，第8步的错误多数是由于网络原因造成的，请翻墙后多次尝试yarn install
+(这一步是最容易出错的，如果在第6步中正确安装了c++编译工具，第8步的错误多数是由于网络原因造成的，请翻墙后多次尝试yarn install)
 
 9. 运行程序
 * yarn start
