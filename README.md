@@ -87,3 +87,45 @@
 [Button Documentation]: https://img.shields.io/badge/Documentation-6399c4?style=for-the-badge&logoColor=white&logo=GitBook
 [Button Install]: https://img.shields.io/badge/Install-78af9f?style=for-the-badge&logoColor=white&logo=DocuSign
 [Button Build]: https://img.shields.io/badge/Building-e5ab42?style=for-the-badge&logoColor=white&logo=GNUBash
+
+
+安装步骤
+
+1. 先翻墙
+
+2. 安装nvm工具：
+参考文档：https://juejin.cn/post/7177964119717806117
+windows版本下载地址：https://github.com/coreybutler/nvm-windows/releases
+mac版下载地址：https://github.com/nvm-sh/nvm/releases/tag/v0.39.5
+
+3. 使用nvm安装node
+nvm list available
+nvm install 16.20.1
+nvm use 16.20.1
+
+4. 安装yarn：
+npm install -g yarn
+
+5. 安装python3
+
+6. 安装编译工具：
+windows系统：
+参考文档：https://keqingrong.cn/blog/2021-02-21-build-tools-on-windows/
+下载地址：https://visualstudio.microsoft.com/visual-cpp-build-tools/
+按照默认安装，什么插件都不选
+![Alt text](image.png)
+
+mac系统：
+参照文档：https://pulsar-edit.dev/docs/launch-manual/sections/core-hacking/#building-pulsar
+
+7. 下载代码：
+git clone https://github.com/pulsar-edit/pulsar.git && cd pulsar
+git submodule init && git submodule update
+
+8. 下载依赖库，编译Native Node模块（需要切换到项目根目录）
+yarn install
+yarn build
+这一步是最容易出错的，如果在第6步中正确安装了c++编译工具，第8步的错误多数是由于网络原因造成的，请翻墙后多次尝试yarn install
+
+9. 运行程序
+yarn start
