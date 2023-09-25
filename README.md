@@ -94,13 +94,12 @@
 1. 先翻墙
 
 2. 安装nvm工具：
-<br>
 参考文档：https://juejin.cn/post/7177964119717806117
 <br>
 windows版本下载地址：https://github.com/coreybutler/nvm-windows/releases
 <br>
 mac版下载地址：https://github.com/nvm-sh/nvm/releases/tag/v0.39.5
-
+<br>
 3. 使用nvm安装node
 <br>
 nvm list available
